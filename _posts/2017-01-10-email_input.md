@@ -1,3 +1,10 @@
+---
+layout: post
+title: Email Input
+category: notes
+tag: imported
+---
+
 _Notes on email-based file submission to analysis platforms_
 
 ##Mail

@@ -1,3 +1,10 @@
+---
+layout: post
+title: SOC Resources
+category: Security Operations
+tag: imported
+---
+
 <i>some bookmarks</i>
 
 * **Sniper Forensics**:TA, Chris Pogue & Trustwave SpiderLabs, [slides](https://files.sans.org/summit/forensics11/PDFs/Sniper%20Forensics-Target%20Acquisition.pdf) (2010)
