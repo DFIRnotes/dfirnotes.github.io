@@ -13,7 +13,7 @@ We have:
 * some blog [posts](http://www.dfirnotes.net/posts/)  and articles 
 * a few rules and scripts, in [github](https://github.com/dfirnotes/rules/)
 * some [files](http://dfirfiles.net/), including the sample [fkit](http://dfirfiles.net/fkit/) distribution 
-* notes and slides for study groups
+* notes and [slides](http://dfirfiles.net/myslides/) for study groups
 * The DFIR Notebooks paper (from which the name and the logo), [published](https://www.sans.org/reading-room/whitepapers/forensics/analysis-reporting-improvements-notebooks-36407) by SANS and on [GitHub](https://github.com/adricnet/dfirnotes/)
 
 ### Contact us
