@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blacklist Failures
+title: ARP attack classwork
 category: Network Analysis
 tag: imported, ittam
 ---
