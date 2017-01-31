@@ -4,15 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Trying to collect some useful resources to help students and practioners of information security
+Collecting some hopefully useful resources to help students and practioners of information security
 
 ### Resources
 
 We have:
 
-* some blog posts and articles
+* some blog [posts](http://www.dfirnotes.net/posts/)  and articles 
 * a few rules and scripts, in [github](https://github.com/dfirnotes/rules/)
-* a few [files](http://dfirfiles.net/), including the sample [fkit](http://dfirfiles/fkit/) distribution 
+* some [files](http://dfirfiles.net/), including the sample [fkit](http://dfirfiles/fkit/) distribution 
+* notes and slides for study groups
+* The DFIR Notebooks paper (from which the name and the logo), [published](https://www.sans.org/reading-room/whitepapers/forensics/analysis-reporting-improvements-notebooks-36407) by SANS and on [GitHub](https://github.com/adricnet/dfirnotes/)
 
 ### Contact us
 
