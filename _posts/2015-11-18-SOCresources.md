@@ -25,7 +25,8 @@ https://www.mitre.org/sites/default/files/publications/pr-13-1028-mitre-10-strat
 
 * [OST.info](http://opensecuritytraining.info) School of SOC flowchart, r0x0r skill [trees](http://opensecuritytraining.info/IntroductionToReverseEngineering.html):
 
-<a href="http://opensecuritytraining.info/Flow.html"><img width=400 src="http://opensecuritytraining.info/Flow_files/droppedImage_1.jpg"></a>
+![OST.info SOC flowchart](http://opensecuritytraining.info/Flow_files/droppedImage_1.jpg)
+
 
 * CIS Workforce Handbook (info page)[http://www.cisecurity.org/workforce/workplace.cfm]
 
@@ -46,4 +47,4 @@ Chris Sanders blog and Phd work,eg
 
 * http://chrissanders.org/2016/10/three-useful-soc-dashboards/
 
-* *FIXME find SOC dashboards slide deck*
+* *FIXME link 10 SIEM dashboards slides*
