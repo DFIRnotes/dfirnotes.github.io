@@ -3,6 +3,7 @@ layout: post
 title: Blacklist Failures
 category: File Analysis
 tag: imported
+author: adricnet
 ---
 
 As I've [mentioned](http://f.adric.net/index.cgi/wiki?name=Email+EXEs+and+free+tools) [before](http://adric.dreamwidth.org/251488.html) one of the things I'm self-studying these days is file analysis. The chosen text is the most excellent *Practical Malware Analysis* (red with the alien autopsy cover). The authors include lab exercises to demonstrate the analysis techniques from each chapter and they are freely available, so buy a couple copies of the book, such as from the publisher's [site](http://www.nostarch.com/malware).

@@ -3,6 +3,7 @@ layout: post
 title: ARP attack classwork
 category: Network Analysis
 tag: imported, ittam
+author: adricnet
 ---
 
 After looking at the tables with the MAC address for awhile I looked up the OUI online and substituted them in, hoping to catch something I'd missed. Indeed there was a third MAC from a third manufacturer in the discussion. All three OEMs make network gear as well as endpoint systems.

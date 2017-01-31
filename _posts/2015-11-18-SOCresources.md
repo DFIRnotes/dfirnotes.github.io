@@ -3,6 +3,7 @@ layout: post
 title: SOC Resources
 category: Security Operations
 tag: imported
+author: adricnet
 ---
 
 <i>some bookmarks</i>

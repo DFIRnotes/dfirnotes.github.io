@@ -3,6 +3,7 @@ layout: post
 title: Email Input
 category: notes
 tag: imported
+author: adricnet
 ---
 
 _Notes on email-based file submission to analysis platforms_
