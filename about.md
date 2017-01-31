@@ -21,5 +21,7 @@ We have:
 ### Credit and thanks
 
 * GitHub Pages, Jekyll
-* @remotephone for helpful posts and examples
-* @barryclark for tutorial and repo: https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
+* [@remotephone](https://remotephone.github.io) for helpful posts and examples: 
+  * https://remotephone.github.io/2016/12/19/Installing_Jekyll_For_Security_Admins.html
+* [@barryclark](https://barryclark.github.io) for tutorial and Jekyll Now repo: 
+  * https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
