@@ -4,9 +4,10 @@ title: Posts
 permalink: /posts/
 ---
 
-posts loop:
+
+posts:
 {% for post in site.posts %}
 <li>
-	<a href="{{ post.url }}">{{ post.title }}</a> from {{ post.date }}
+	<a href="{{ post.url }}">{{ post.title }}</a> by {{ post.author }} from {{ post.date }}
 </li>
 {% endfor %}
