@@ -2,7 +2,7 @@
 layout: post
 title: GIFAR's Magical Mimes Filed in 8 by 3 (2012)
 category: File Analysis
-tag: imported
+tags: imported,brownbag
 author: adricnet
 ---
 
