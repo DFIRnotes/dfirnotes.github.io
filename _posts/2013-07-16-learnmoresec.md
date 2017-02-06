@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learn More Security
-category: Careers
+category: Education
 tag: imported
 author: adricnet
 ---
