@@ -12,12 +12,13 @@ This morning with much coffee I'm working between email to practice netcat betwe
 * https://pen-testing.sans.org/blog/2013/05/06/netcat-without-e-no-problem
 * http://wiki.securityweekly.com/wiki/index.php/Episode195#Tech_Segment:_Crazy-Ass_Netcat_Relays_for_Fun_and_Profit
 * PWK Lab Manual (private)
+* man nc (openbsd)
 
 **Hosts**
 
 * Archie: Win10 HP ProBook w/ VirtualBox: 192.168.0.15
   * Seven: Win7 IE11 VM provided by [Microsoft](https://modern.ie/): 10.0.2.15
-* Gray: Chomebook (x64) w/ crouton 192.68.0.13
+* Gray: Chromebook (x64) w/ crouton 192.68.0.13
   * xenial: an Ubuntu chroot (Crouton)
 
 Tasks
@@ -48,4 +49,10 @@ Tasks
  
 1. Shovelling shells
 
+  * [x] xenial persistent listen (while), archie relay (L), push shell output from archie
+  * [x] xenial shovel shell from archie : ```xenial> while [ 1 ]; do cat /tmp/pipe | /bin/sh -i 2>&1 | nc -lp 4443 > /tmp/pipe; done```
+  * [x] xenial shovel shell from seven (thru archie's persistent relay)
+  * [x] seven push half a shell out to xenial (thru NAT)
+  * [.] seven push half a shell out to xenial thru archie relay
   * [ ] 
+
