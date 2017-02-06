@@ -24,6 +24,7 @@ Tasks
 --
 
 0. Networks up, Firewalls down, for class
+
   1. [x] xenial : installed ufw, disabled firewall
   1. [x] Seven : works better with DHCP on 
   1. [.] ping xenial from seven
@@ -31,10 +32,11 @@ Tasks
 
 
 1. Smoke tests
+
   * [x] nc on Archie listening (chat), nc on xenial connect 
   * [x] nc on Archie listening -e, nc on xenial connect
   * [x] nc on xenial listening, xenial connecting ... checking iptables/ufw 
-  * [ ] nc on Seven listening, nc on xenial connect
+  * [!] nc on Seven listening, nc on xenial connect? ... NAT
   * [x] nc on xenial listening, nc on Seven connect
   * [x] nc on xenial listening chat/text, nc relay on archie, nc on Seven connect
     * [!] ```seven> nc -v 192.168.0.15 4433``` to ```archie> nc -v -l -p 4433 | nc 192.168.0.13 4444``` no workee in PS
@@ -42,4 +44,8 @@ Tasks
     * [x] seven to archie to text file, text file into nc to xenial works fine
   * [x] nc on archie listening, nc on Seven connect
   * [!] nc on Seven listening, nc on archie connecting ... NAT
+  * [x] while loop listener on xenial, persistent one way (L) relay on archie -> xenial 
  
+1. Shovelling shells
+
+  * [ ] 
