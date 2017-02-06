@@ -25,10 +25,10 @@ Tasks
 
 0. Networks up, Firewalls down, for class
 
-  1. [x] xenial : installed ufw, disabled firewall
-  1. [x] Seven : works better with DHCP on 
-  1. [.] ping xenial from seven
-  1. [.] ping archie from seven
+  * [x] xenial : installed ufw, disabled firewall
+  * [x] Seven : works better with DHCP on 
+  * [.] ping xenial from seven
+  * [.] ping archie from seven
 
 
 1. Smoke tests
