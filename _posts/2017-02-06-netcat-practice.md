@@ -13,6 +13,7 @@ This morning with much coffee I'm working between email to practice netcat betwe
 * http://wiki.securityweekly.com/wiki/index.php/Episode195#Tech_Segment:_Crazy-Ass_Netcat_Relays_for_Fun_and_Profit
 * PWK Lab Manual (private)
 * man nc (openbsd)
+* sc and netsh from: https://securelist.com/blog/research/77403/fileless-attacks-against-enterprise-networks/
 
 **Hosts**
 
@@ -56,3 +57,30 @@ Tasks
   * [x] seven push half a shell out to xenial thru archie relay
   * [ ] 
 
+1. Port proxy in netsh?
+
+  * [.] seems to work as a relay just fine, running on archie:
+  
+```
+netsh interface portproxy>add v4tov4 listenport=3333 connectaddress=192.168.0.8 connectport=8888 listenaddress=0.0.0.0
+
+netsh interface portproxy>show all
+
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+0.0.0.0         3333        192.168.0.8     8888
+```
+Connecting from archie to the xenial chroot on Chromebook gray for chat
+```
+C:\Users\adric\Downloads>nc -v 192.168.0.15 3333
+archimedes [192.168.0.15] 3333 (?) open
+boo-weep?
+```
+
+```
+xenial> nc -vlp 8888
+Connection ...
+boo-weep?
+```
