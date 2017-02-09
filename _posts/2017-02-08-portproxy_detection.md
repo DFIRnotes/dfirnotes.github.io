@@ -9,7 +9,7 @@ author: adricnet
 How can we see port proxy configurations in DFIR?
 ===
 
-I came across a new (to me) technique for evasion and persistence reading news today. The report[1] specifically called out the clever use of built in Windows service control and network utilities (sc, netsh) by some attackers they'd investigated. After Googling for a few minutes it was clear that this technique is known to Windows sysadmins and the attacker community (as it is featured in a Metasploit module[2]).
+I came across a new (to me) technique for evasion and persistence reading news today. The report(1) specifically called out the clever use of built in Windows service control and network utilities (sc, netsh) by some attackers they'd investigated. After Googling for a few minutes it was clear that this technique is known to Windows sysadmins and the attacker community (as it is featured in a Metasploit module(2).
 
 So, let's run the process: create the behaviour in the lab, look for the artifacts, and then figure out how to capture and analyse them.
 
@@ -162,3 +162,9 @@ FailureCommand:
 ```
 
 These are certainly detectable, and can be collected in triage capture as well as in intensive analysis. It's persistent into Registry but otherwise a little tricky to see outside of the *netsh* environment.
+
+Refs
+--
+
+1. sc and netsh from:  https://securelist.com/blog/research/77403/fileless-attacks-against-enterprise-networks/
+1. MSF module: https://github.com/rapid7/metasploit-framework/blob/master/modules/post/windows/manage/portproxy.rb
