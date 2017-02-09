@@ -9,6 +9,10 @@ author: adricnet
 How can we see port proxy configurations in DFIR?
 ===
 
+I came across a new (to me) technique for evasion and persistence reading news today. The report[1] specifically called out the clever use of built in Windows service control and network utilities (sc, netsh) by some attackers they'd investigated. After Googling for a few minutes it was clear that this technique is known to Windows sysadmins and the attacker community (as it is featured in a Metasploit module[2]).
+
+So, let's run the process: create the behaviour in the lab, look for the artifacts, and then figure out how to capture and analyse them.
+
 Make some in the lab
 ---
 
@@ -45,7 +49,7 @@ PS> rekal.exe imagecopy -f .\archie.aff4 -O archie.raw
 
 After imageinfo to get profile(s) , some nosing about to find memory that references the port proxy...
 
-* netsh may not have been runnign at time of w10 mem capture
+* netsh may not have been running at time of w10 mem capture
 * Yarascan for the port number as string: ```rekal.exe -f .\archie.aff4 yarascan --string '3333'```
   * many results that dont' look related, probably too broad a key
 * ibid for the IP address .. left running for a couple hours
@@ -157,3 +161,4 @@ ImagePath: %SystemRoot%\System32\svchost.exe -k NetSvcs
 FailureCommand: 
 ```
 
+These are certainly detectable, and can be collected in triage capture as well as in intensive analysis. It's persistent into Registry but otherwise a little tricky to see outside of the *netsh* environment.
