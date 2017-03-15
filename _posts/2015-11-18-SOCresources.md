@@ -27,7 +27,6 @@ https://www.mitre.org/sites/default/files/publications/pr-13-1028-mitre-10-strat
 
 ![OST.info SOC flowchart](http://opensecuritytraining.info/Flow_files/droppedImage_1.jpg)
 
-
 * CIS Workforce Handbook (info page)[http://www.cisecurity.org/workforce/workplace.cfm]
 
 * Job roles, training and education tables:
@@ -41,7 +40,7 @@ https://www.mitre.org/sites/default/files/publications/pr-13-1028-mitre-10-strat
 * NIST [SPs](http://csrc.nist.gov/publications/PubsSPs.html), especially:
   * 800-61r2 : Computer Security Incident Handling Guides
   * 800-86 : Guide to Integrating Forensic Techniques into Incident Response
-* DoD 6510 http://www.dtic.mil/cjcs_directives/cdata/unlimit/m651001.pdf
+* DoD 6510 from http://www.jcs.mil/Library/CJCS-Manuals/
 
 Chris Sanders blog and Phd work,eg
 
