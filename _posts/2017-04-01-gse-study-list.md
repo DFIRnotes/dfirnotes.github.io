@@ -5,7 +5,7 @@ category: education
 author: adricnet
 ---
 
-Herein are a few notes on my journey to GSE as traditionally made and posted before the exam.
+Herein are a few notes on my journey towards GSE as traditionally made and posted before the exam.
 For more info on GSE see the official site: https://giac.org/gse
 
 Preparatory Studies (~5 years)
@@ -25,7 +25,7 @@ Preparatory Studies (~5 years)
 	* Metasploitable 2
 	* mrRobot
 * PWK lab manual labs
-* #investigationtheory and #eisw online courses from @chrissanders
+* #investigationtheory and #eisw online courses from @chrissanders88
 * SEC504 labs review, especially hotpics and xss/sqli
 * Windows triage/response webcast from BHIS
   * some practice with windows tools and clkf
@@ -37,7 +37,7 @@ Preparatory Studies (~5 years)
 my kit:
 ===
 
-This is what I'm taking in with me. It certainly includes things that some things that are just part of my regular load-out and so I will feel better having.
+This is what I'm taking in with me. It certainly includes some things that are unrelated to the exam but are part of my regular load-out. I will just feel better having them whether useful or not this weekend.
 
 books and brochures
 ---
