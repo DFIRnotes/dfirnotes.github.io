@@ -8,7 +8,7 @@ author: adricnet
 
 GIFAR's Magic Mimes Filed in 8 by 3: File types, identification techniques, and their weaknesses to attack
 
-(raw slides text)
+This is raw slides text. PDF of slides: http://dfirfiles.net/myslides/filetypes-2017.pdf
 
 File types?
 How do computers tell what kind of thing something is?
@@ -161,4 +161,4 @@ References
 Slide deck and links available online:
 
 
-[link here]
+http://www.dfirnotes.net/filetypes-brownbag/
