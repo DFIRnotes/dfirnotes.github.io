@@ -3,6 +3,7 @@ layout: post
 title: FAQs: CISSP, PWK, OSCP, or getting started
 category: FAQ
 author: adricnet
+date: 2017-10-26
 ---
 
 Some good FAQs from mailbox
