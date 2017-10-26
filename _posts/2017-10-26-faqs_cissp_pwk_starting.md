@@ -8,7 +8,6 @@ date: 2017-10-26
 ---
 
 Some good FAQs from mailbox
-===
 
 CISSP
 ---
