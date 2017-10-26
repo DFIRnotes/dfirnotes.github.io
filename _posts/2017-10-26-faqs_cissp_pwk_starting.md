@@ -2,7 +2,6 @@
 layout: post
 title: FAQs: CISSP, PWK, OSCP, or getting started
 category: FAQ
-tag: 
 author: adricnet
 ---
 
