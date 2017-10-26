@@ -1,7 +1,8 @@
 ---
 layout: post
-title: FAQs: CISSP, PWK, OSCP, or getting started
+title: CISSP, PWK, OSCP, or getting started
 category: FAQ
+tag: github
 author: adricnet
 date: 2017-10-26
 ---
