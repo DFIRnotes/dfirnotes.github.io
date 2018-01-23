@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Brownbag: Learning to Attack
-category: analysis
-tag: brownbag
+title: Learning to Attack
+category: attack
+tags: brownbag
 author: adricnet
 ---
 
