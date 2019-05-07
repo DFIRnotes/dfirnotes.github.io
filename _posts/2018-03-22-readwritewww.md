@@ -6,7 +6,7 @@ tags: brownbag
 author: adricnet
 ---
 
-# Reading and Writing the Web: Learning to Attack
+Reading and Writing the Web: Learning to Attack, a brownbag from the 2018 series
 
 This is lightly formatted raw slides text. PDF of slides: http://dfirfiles.net/myslides/
 
