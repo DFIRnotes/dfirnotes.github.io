@@ -6,7 +6,7 @@ tags: brownbag
 author: adricnet
 ---
 
-# Debugging for Attack and Defence: Learning to Attack
+Debugging for Attack and Defence: Learning to Attack, a brownbag in the 2018 series.
 
 This is lightly formatted raw slides text. PDF of slides: http://dfirfiles.net/myslides/
 
