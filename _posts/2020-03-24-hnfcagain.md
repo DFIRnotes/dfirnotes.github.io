@@ -249,3 +249,8 @@ r/r * 109876:   man/.Ci/.temp12
 
 There were in this folder quite a collection of things including system packages (tgz and rpm), numbered temp files with hiding names (dots), a bin folder (scripts?) ... Well, that certainly looks like a lead worth chasing!
 ```
+## Closing Remarks
+
+* Mount images read-only, from a copy of your evidence. Check the hashes!
+* Take notes as you go rather than trying to figure oout what you did and why from your own shell history and logs.
+* Try things, share broadly, read and learn :)
