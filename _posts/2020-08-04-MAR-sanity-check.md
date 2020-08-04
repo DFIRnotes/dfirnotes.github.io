@@ -4,7 +4,6 @@ title: Fun with Chinese Malware
 category: education,dfir
 author: adricnet
 ---
-Fun with Chinese Malware
 
 _In which yours truly takes REMnux 7 and Ghidra for a spin with some newly famous malware_
 
@@ -12,6 +11,17 @@ There's a newly public Windows malware sample making the rounds and I thought I 
 The report is at https://us-cert.cisa.gov/ncas/analysis-reports/ar20-216a and I suspect we'll all be studying it for awhile.
 They provide hashes and detailed anlaysi for two kinds of samples (two pair if you will): a pretty straight-forward loader and it's encrypted payload. 
 They also share Snort and Yara rules which are the native language of the malware analyst :)
+
+## 
+If you haven't done code-level analysis of Windows software before, well, this is a great time to start and some good samples. Though, if you are a beginner please start with [Practical Malware Analysis](https://nostarch.com/malware) or another excellent book like Monnappa's [Learning Malware Analysis](https://www.packtpub.com/networking-and-servers/learning-malware-analysis) to get some essential safety procedures, process, and analysis frameworks.
+
+## Get the samples
+The MAR includes the SHA256 hashes but not the files. You'll need to find or pay someone to give you copies if you don't already have them.
+
+I checked a few places and ended up getting them from Virus Total Intelligence by punching in the hashes and downloading zip files.
+
+## Ghidra 9
+Some intro to Ghidra is helpful before you take on real analysis. Anuj has some excellent material and videos on his [site](https://malwology.com/2020/04/27/sans-for610-reverse-engineering-malware-now-with-ghidra/). If you are used to another toolset Ghidra is a bit different.  For example, I found the integrated decompiler output refreshing.
 
 ## Yara rule sanity check
 Here, REMnux 7 (newly released) shows that the Yara rule provided in the MAR detects the payload samples. 
