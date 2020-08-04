@@ -9,11 +9,17 @@ _In which yours truly takes REMnux 7 and Ghidra for a spin with some newly famou
 
 There's a newly public Windows malware sample making the rounds and I thought I would use it for practice with the analysis toolset including some newer tools.
 The report is at https://us-cert.cisa.gov/ncas/analysis-reports/ar20-216a and I suspect we'll all be studying it for awhile.
-They provide hashes and detailed anlaysi for two kinds of samples (two pair if you will): a pretty straight-forward loader and it's encrypted payload. 
-They also share Snort and Yara rules which are the native language of the malware analyst :)
+They provide hashes and detailed anlaysi for two kinds of samples (two pair if you will): a pretty straight-forward loader and its encrypted payload. 
 
-## 
-If you haven't done code-level analysis of Windows software before, well, this is a great time to start and some good samples. Though, if you are a beginner please start with [Practical Malware Analysis](https://nostarch.com/malware) or another excellent book like Monnappa's [Learning Malware Analysis](https://www.packtpub.com/networking-and-servers/learning-malware-analysis) to get some essential safety procedures, process, and analysis frameworks.
+They also share Snort and Yara rules which are the native language of the malware analyst, excellent :)
+
+## Start here
+If you haven't done code-level analysis of Windows software before, well, this is a great time to start and some good samples. Though, if you are a beginner please start with [Practical Malware Analysis](https://nostarch.com/malware) or another excellent book like Monnappa K A's [Learning Malware Analysis](https://www.packtpub.com/networking-and-servers/learning-malware-analysis) to get some essential safety procedures, process, and analysis frameworks.
+
+# Tools
+* REMNux 7: https://remnux.org/, https://docs.remnux.org/ a malware analysis toolset actually includes both
+* Ghidra: https://ghidra-sre.org/ and
+* Yara: https://virustotal.github.io/yara/ 
 
 ## Get the samples
 The MAR includes the SHA256 hashes but not the files. You'll need to find or pay someone to give you copies if you don't already have them.
@@ -21,11 +27,21 @@ The MAR includes the SHA256 hashes but not the files. You'll need to find or pay
 I checked a few places and ended up getting them from Virus Total Intelligence by punching in the hashes and downloading zip files.
 
 ## Ghidra 9
-Some intro to Ghidra is helpful before you take on real analysis. Anuj has some excellent material and videos on his [site](https://malwology.com/2020/04/27/sans-for610-reverse-engineering-malware-now-with-ghidra/). If you are used to another toolset Ghidra is a bit different.  For example, I found the integrated decompiler output refreshing.
+Some intro to Ghidra is helpful before you take on real analysis. Anuj has some excellent material and videos on his [site](https://malwology.com/2020/04/27/sans-for610-reverse-engineering-malware-now-with-ghidra/). If you are used to another toolset Ghidra is quite a bit different, though entirely in wonderful ways so far for me.  For example, I found the integrated decompiler output refreshing.
 
-## Yara rule sanity check
-Here, REMnux 7 (newly released) shows that the Yara rule provided in the MAR detects the payload samples. 
-The MAR itself draws a map that would help a dedicated analyst recreate the rules with the samples, but anyone can use them to detect these samples and likely the whole family of tools which is a great share.
+[image: ghidra project]
+
+I created a new Ghidra project, imported the 4a06...07d4 PE file sample and opened it in Code Browser allowing it to analyse automatically using the defaults. It was slightly annoyed that it couldn't find one of the PDBs, but everything completed quickly and without error. From there I could explore functions and it was easy to find the default entry point and the exported ServiceMain and MyStart functions and start poking around...
+
+[image: some ghidra function naming action]
+
+## Yara, with VS Code
+I yanked the Yara code out of the MAR PDF and dropped into one of my favourite editors Visual Studio Code to use the Yara support it has via plugin. I expected to have to tweak the formatting of the PDF-copied rule and was happy that I didn't need to. Still, syntax highlighting is most welcome:
+
+[image yara VS code]
+
+### Yara rule sanity check
+Here, REMnux 7 (newly released) shows that the Yara rule provided in the MAR detects the payload samples. The MAR itself is a map that would help a dedicated analyst recreate the rules with the samples, but anyone can use them to detect these samples and likely the whole family of tools which is a great share.
 
 ```
 root@remnux-remnux-distro2:/tmp/t# for file in *; do yara cisa_taidoor.yara $file;done
@@ -70,3 +86,5 @@ root@remnux-remnux-distro2:/tmp/t# xxd 363ea096a3f6d06d56dc97ff1618607d462f36613
 00000080: c98a fd88 cb3c 45f7 ffdf ac73 6b39 f2ac  .....<E....sk9..
 00000090: c98d 9a58 ba71 fc36 46b9 43ee e33f 6d6b  ...X.q.6F.C..?mk
 ```
+
+so the Yara rule provided can be used to find the payload samples on disk, in memory, or in network streams depending on how you run Yara!
