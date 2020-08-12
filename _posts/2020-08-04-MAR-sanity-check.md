@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fun with Chinese Malware
+title: Fun with [Famous] Malware
 category: education,dfir
 author: adricnet
 ---
