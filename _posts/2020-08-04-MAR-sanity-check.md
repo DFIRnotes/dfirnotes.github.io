@@ -40,7 +40,7 @@ Ghidra not only detects and labels Windows functions ...
 
 ![image: Ghidra exports and functions](http://dfirfiles.net/samples/5.16.51PM.png)
 
-but the decompiler window is just there and much easier to browse or skim than the equivalent pages of assebly code and compiler hints.
+but the decompiler window is just there and much easier to browse or skim than the equivalent pages of assembly code and compiler hints.
 
 Here's the ServiceMain implementation. This is required to be a Windows Service so it's pretty easy to identify and understand.
 ![image: service main decompiler](http://dfirfiles.net/samples/5.18.44PM.png)
@@ -49,11 +49,11 @@ Here's the decompiler showing a chunk of the MyStart function the service calls.
 ![image: MyStart decompiler focus](http://dfirfiles.net/samples/5.20.00PM.png)
 
 ## Yara, with VS Code
-I yanked the Yara code out of the MAR PDF and dropped into one of my favourite editors Visual Studio Code to use the Yara support it has via plugin. I expected to have to tweak the formatting of the PDF-copied rule (imagine if you will that this happens at lot) and was happy that I didn't need to. Still, the syntax highlighting and checking is most welcome!
+I yanked the Yara code out of the MAR PDF and dropped into one of my favourite editors Visual Studio Code to use the Yara support it has via plugin. I expected to have to tweak the formatting of the PDF-copied rule (imagine if you will that this happens at $work often) and was happy that I didn't need to. Still, the syntax highlighting and checking is most welcome!
 
 ![image yara VS code](http://dfirfiles.net/samples/5.17.56PM.png)
 
-Thanks to @infosec-intern for the VS Yara support: https://github.com/infosec-intern/vscode-yara. I owe you $beer!
+Thanks to @infosec-intern for the VSCode Yara support: https://github.com/infosec-intern/vscode-yara. I owe you $beer!
 
 ### Yara rule sanity check
 Here, REMnux 7 (newly released) shows that the Yara rule provided in the MAR detects the payload samples. The MAR itself is a map that would help a dedicated analyst recreate the rules with the samples, but anyone can use them to detect these samples and likely the whole family of tools which is a great share.
