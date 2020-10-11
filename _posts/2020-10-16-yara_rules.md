@@ -31,14 +31,30 @@ rainbow teams too...
 ### Yara scanning files
 
 * better than hash checks
+  * though hash research advances:
+    * https://blogs.jpcert.or.jp/ja/2016/05/impfuzzy.html  
 * better than mere ```strings -a```
+* as seen in CISA MARs and other fine products,helping you hunt for 
+  * Hidden Cobras:
+    * https://us-cert.cisa.gov/ncas/analysis-reports/ar20-045g#yara
+  * Flying Kittens:
+    * https://www.crowdstrike.com/blog/cat-scratch-fever-crowdstrike-tracks-newly-reported-iranian-actor-flying-kitten/
+  * Evil Pythons
+    * https://github.com/DFIRnotes/rules/blob/master/str_py2exe.yara
+  * and other fantastic beasts
 
 ### Yara scanning memory
 
 * behaviour > simple indicator matches
 * "malware can hide but it has to run" -Alyssa, FOR526
+* "gentilkiwi demo" in Windows 7 VM
 
 ### Yara scanning network traffic ?
+* In Suricata, vis LuaJIT engine: https://github.com/B0fH/yara-suricata
+* In Zeek, BlackHat 2019 talk by David Bernal @d4v3c0d3r "Detecting malicious files with YARA rules as they traverse the network"
+  * https://i.blackhat.com/USA-19/Wednesday/us-19-Bernal-Detecting-Malicious-Files-With-YARA-Rules-As-They-Traverse-The-Network.pdf
+  * https://i.blackhat.com/USA-19/Wednesday/us-19-Bernal-Detecting-Malicious-Files-With-YARA-Rules-As-They-Traverse-the-Network-wp.pdf
+  * https://www.youtube.com/watch?v=irai0kk942E
 
 # Link Dump
 
@@ -48,8 +64,11 @@ rainbow teams too...
 * https://yara.readthedocs.io/en/stable/
 
 ## Free rules, links to more
-* Yara Rules com
-* Recorded Future
+* 
+* Yara Rules com: https://github.com/Yara-Rules/rules
+* Reversing Labs:
+  * https://www.reversinglabs.com/products/open-source-yara-rules
+  * https://github.com/reversinglabs/reversinglabs-yara-rules
 * https://github.com/InQuest/awesome-yara
 
 ## free Yara integrations and utilities
