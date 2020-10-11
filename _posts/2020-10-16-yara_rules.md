@@ -12,22 +12,33 @@ Yara is a really useful tool for matching patterns in files and data
 developed by the Virustotal team. It has applications across many
 fields of information security and a vibrant online community.Along
 with Snort it's a key language for threat research and defense
-operations, adn has interesting application for red, purple, and
+operations, and has interesting application for red, purple, and
 rainbow teams too...
 
 * What's Yara , what's it for?
 * Where can I get some free rules ?
 * What cool tricks can you do with Yara + rules ?
+* Link Dump
 
-# 
+# notes
 
 ## Yara is ...
 
 * "YARA, the "pattern matching swiss knife for malware researchers (and everyone else)" is developed by @plusvic and @VirusTotal."
 
-## Yara scanning memory
+## tricks
 
-## Yara the Network
+### Yara scanning files
+
+* better than hash checks
+* better than mere ```strings -a```
+
+### Yara scanning memory
+
+* behaviour > simple indicator matches
+* "malware can hide but it has to run" -Alyssa, FOR526
+
+### Yara scanning network traffic ?
 
 # Link Dump
 
