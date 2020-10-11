@@ -36,14 +36,28 @@ rainbow teams too...
 * https://github.com/virustotal/yara
 * https://yara.readthedocs.io/en/stable/
 
-## Yara integrations and utilities
-* Yaragen
-* Thor and Loki
-* Suricata / Zeek ?
-* Volatility / Rekall
-
 ## Free rules, links to more
 * Yara Rules com
 * Recorded Future
 * https://github.com/InQuest/awesome-yara
+
+## free Yara integrations and utilities
+* Yaragen: 
+* Loki: https://github.com/Neo23x0/Loki
+* Suricata / Zeek ?
+* Volatility / Rekall
+
+### with $$ tools
+* VirusTotal (Pro) Hunting: 
+    * https://support.virustotal.com/hc/en-us/articles/360000363717-VT-Hunting
+* https://www.nextron-systems.com/products/  
+* https://fidelissecurity.com/threatgeek/threat-intelligence/yara-intrusion-prevention/
+* https://docs.tanium.com/threat_response/threat_response/intel.html#Configure_YARA_files
+* 
+
+## Yara in free classes
+* https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational#developing-countermeasures
+
+### in $$ classes
+* SANS Institute: FOR578, ICS515
 
