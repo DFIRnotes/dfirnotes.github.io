@@ -42,12 +42,16 @@ rainbow teams too...
   * Evil Pythons
     * https://github.com/DFIRnotes/rules/blob/master/str_py2exe.yara
   * and other fantastic beasts
+* in osquery !
+
+![CentOS 8](http://dfirfiles.net/samples/cent8_yara_osquery_eicar.png)
+![macOS 10.15](http://dfirfiles.net/samples/macos_yara_osquery_eicar.png)
 
 ### Yara scanning memory
 
 * behaviour > simple indicator matches
 * "malware can hide but it has to run" -Alyssa, FOR526
-* "gentilkiwi demo" in Windows 7 VM
+* _Live "gentilkiwi demo" in Windows 7 VM ???_
 
 ### Yara scanning network traffic ?
 * In Suricata, vis LuaJIT engine: https://github.com/B0fH/yara-suricata
@@ -70,11 +74,16 @@ rainbow teams too...
 * https://github.com/InQuest/awesome-yara
 
 ## free Yara integrations and utilities
+* Yara in OSQuery:
+  * https://osquery.readthedocs.io/en/latest/deployment/yara/ , https://osquery.io/schema/4.5.1/#yara
+  * Helpful Blog, EICAR examples: https://holdmybeersecurity.com/2020/03/01/operation-cleanup-eradicating-malware-with-osquery-and-kolide/
+* CrowdStrike CrowdResponse: https://www.crowdstrike.com/blog/crowdresponse-release-new-tasks-modules/
 * Yaragen / Yara Generator: 
   * https://github.com/Neo23x0/yarGen
   * https://github.com/Xen0ph0n/YaraGenerator
-* Loki: https://github.com/Neo23x0/Loki
-* Volatility / Rekall: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan
+* Loki scanner: https://github.com/Neo23x0/Loki
+* Volatility / Rekall yarascan plugin: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan
+* Yara GUI for windows ? 
 
 ### with $$ tools
 * VirusTotal (Pro) Hunting: 
@@ -93,8 +102,8 @@ rainbow teams too...
 * https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational#developing-countermeasures
 
 ### in $$ classes
-* Zero2Hero:
-  * 
+* Zero2Hero, Automated, BMAC:
+  * https://courses.zero2auto.com/
 * SANS Institute: 
   * FOR578: https://www.sans.org/cyber-security-courses/cyber-threat-intelligence/
   * ICS515: https://www.sans.org/cyber-security-courses/industrial-control-system-active-defense-and-incident-response/
@@ -109,7 +118,9 @@ rainbow teams too...
   * https://i.blackhat.com/USA-19/Wednesday/us-19-Bernal-Detecting-Malicious-Files-With-YARA-Rules-As-They-Traverse-The-Network.pdf
   * https://i.blackhat.com/USA-19/Wednesday/us-19-Bernal-Detecting-Malicious-Files-With-YARA-Rules-As-They-Traverse-the-Network-wp.pdf
   * https://www.youtube.com/watch?v=irai0kk942E
-  
+* Resource Efficient Malware Scans with YARA + osquery (osquery@scale 2020) https://www.youtube.com/watch?v=kmmPcopxeEM
+* https://dfrws.org/conferences/dfrws-usa-2016/sessions/using-grr-and-rekall-scalable-memory-analysis-part-1
+
 # misc
 
 * Me? I read quite a bit, take some hard exams, and teach a little. I haven't finished college. I work in information security thanks to DC404  
