@@ -26,16 +26,21 @@ operations, and has interesting applications for red, purple, and
 ## Yara is ...
 
 * "YARA, the "pattern matching swiss knife for malware researchers (and everyone else)" is developed by @plusvic and @VirusTotal."
-* rules made up of strings and conditions
+* rules made up of strings and conditions (and the engine that evaluates them)
+  * rules can be really simple
+  * can be pretty complex too when you need it
+    * strings are just bytes, and there are wildcards and loops :)
+    * Yes, you can use regular expressions too, if you are into that kind of thing *eyebrow*
 
-## Example rules for testing
-* always_true (from OSQuery Yara (manual)[https://osquery.readthedocs.io/en/latest/deployment/yara/]
-* eicar ( by AirBNB on (GitHub)[https://raw.githubusercontent.com/airbnb/binaryalert/master/rules/public/eicar.yara], found in (blog)[https://holdmybeersecurity.com/2020/03/01/operation-cleanup-eradicating-malware-with-osquery-and-kolide/] "OPERATION CLEANUP: ERADICATING MALWARE WITH OSQUERY AND KOLIDE" by Spartan2194 )
+## Example rules
+* always_true (from OSQuery Yara [manual](https://osquery.readthedocs.io/en/latest/deployment/yara/)
+* eicar ( by AirBNB on [GitHub](https://raw.githubusercontent.com/airbnb/binaryalert/master/rules/public/eicar.yara), found in [blog](https://holdmybeersecurity.com/2020/03/01/operation-cleanup-eradicating-malware-with-osquery-and-kolide/) "OPERATION CLEANUP: ERADICATING MALWARE WITH OSQUERY AND KOLIDE" by Spartan2194 )
   * WTH is EICAR?: http://www.eicar.org/86-0-Intended-use.html
   * More fun with EICAR: https://biebermalware.wordpress.com/2017/05/10/playing-with-eicar-take-ii/  
-* PyInstaller ( me, (str_py2exe.yara)[https://raw.githubusercontent.com/DFIRnotes/rules/master/str_py2exe.yara] )
+* PyInstaller ( me, [str_py2exe.yara](https://raw.githubusercontent.com/DFIRnotes/rules/master/str_py2exe.yara) )
   * Once upon a pentest...  
-* http (Volatility (yarascan)[https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan] docs)
+* http (Volatility [yarascan](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan) docs)
+* TODO Gentil Kiwi ( All hail Benjamin Delphy! https://github.com/gentilkiwi)
 
 ### Test rules
 
@@ -75,17 +80,9 @@ rule eicar_av_test {
 
 ```
 // Practice Yara rule: check for string artifacts of py2exe builds
-// requires Yara 3.4+
-
-/*
-  github.com/dfirnotes/rules
-  Version 0.0.0
-*/
 
 rule has_pythonscript_label
 {
-  meta:
-    author = "@adricnet"
   strings:
     $pyscript_label = "PYTHONSCRIPT"
 
@@ -95,8 +92,6 @@ rule has_pythonscript_label
 
 rule has_py2exe_err_string
 {
-  meta:
-    author = "@adricnet"
   strings:
     $py2exe_activation_error = "py2exe failed to activate the "
 
@@ -106,8 +101,6 @@ rule has_py2exe_err_string
 
 rule possible_py2exe_created_file
 {
-  meta:
-    author = "@adricnet"
   condition:
     has_pythonscript_label and has_py2exe_err_string
 }
@@ -174,7 +167,7 @@ rule possible_py2exe_created_file
 * Volatility / Rekall yarascan plugin: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan
 * Yara GUI for windows ? 
 
-### with $$ tools
+### Use Yara with $$ tools
 * VirusTotal (Pro) Hunting: 
     * https://support.virustotal.com/hc/en-us/articles/360000363717-VT-Hunting
 * Nextron Systems (Florian Roth)
@@ -190,7 +183,7 @@ rule possible_py2exe_created_file
 ## Yara in free classes
 * https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational#developing-countermeasures
 
-### in $$ classes
+### Yara in $$ classes
 * Zero2Hero, Automated, BMAC:
   * https://courses.zero2auto.com/
 * SANS Institute: 
@@ -212,9 +205,10 @@ rule possible_py2exe_created_file
 
 # misc
 
-* Me? I read quite a bit, take some hard exams, and teach a little. I haven't finished college. I work in information security thanks to DC404  
+* Me? I read quite a bit, take some hard exams, and teach a little. I haven't finished college. I work in information security thanks to DC404.  My signature block is:
 ```
-BBSTi, CISSP, GIAC**0x0b, GSE, ITIL, LPI
+BBSTi, CISSP, GIAC**0x0b, GSE, ITIL, LPI, etc, usw.
 Information Security Leader & Educator | Twitter, Github: @dfirnotes
 ```
-* Soundrack: HBO Asia Original: Halfworlds seasons
+* I should be studying for my next exam.
+* Soundtrack: HBO Asia Original: Halfworlds (both seasons) and some Nine Inch Nails
