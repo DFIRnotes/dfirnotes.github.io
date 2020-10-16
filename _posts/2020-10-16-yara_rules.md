@@ -39,14 +39,11 @@ operations, and has interesting applications for red, purple, and
   * More fun with EICAR: https://biebermalware.wordpress.com/2017/05/10/playing-with-eicar-take-ii/  
 * PyInstaller ( me, [str_py2exe.yara](https://raw.githubusercontent.com/DFIRnotes/rules/master/str_py2exe.yara) )
   * Once upon a pentest...  
-* http (Volatility [yarascan](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan) docs)
-* TODO Gentil Kiwi ( All hail Benjamin Delphy! https://github.com/gentilkiwi)
+* TODO Gentil Kiwi ( All hail Benjamin Delphy! https://github.com/gentilkiwi inspired by Volatility [yarascan](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan) docs))
 
 ### Test rules
 
-```
-//always_true.yara
-rule always_true
+```rule always_true
 {
     meta:
         purpose = "testing"
@@ -57,7 +54,6 @@ rule always_true
 ```
 
 ```
-// https://raw.githubusercontent.com/airbnb/binaryalert/master/rules/public/eicar.yara
 rule eicar_av_test {
     /*
        Per standard, match only if entire file is EICAR string plus optional trailing whitespace.
@@ -106,7 +102,7 @@ rule possible_py2exe_created_file
 }
 ```
 
-```http```
+* _mimikatz_
 
 ## Some Yara Tricks
 
