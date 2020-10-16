@@ -43,7 +43,8 @@ operations, and has interesting applications for red, purple, and
 
 ### Test rules
 
-```rule always_true
+```
+rule always_true
 {
     meta:
         purpose = "testing"
