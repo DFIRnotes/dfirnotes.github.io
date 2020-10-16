@@ -10,23 +10,112 @@ _dc404 Oct 2020 presentation notes and link dump_
 # pitch
 Yara is a really useful tool for matching patterns in files and data
 developed by the Virustotal team. It has applications across many
-fields of information security and a vibrant online community.Along
-with Snort it's a key language for threat research and defense
-operations, and has interesting application for red, purple, and
-rainbow teams too...
+fields of information security and a vibrant online community. Along
+with <strike>Snort</strike> Suricata it's a key language for threat research and defense
+operations, and has interesting applications for red, purple, and
+(rainbow) teams too...
 
 * What's Yara , what's it for?
-* Where can I get some free rules ?
 * What cool tricks can you do with Yara + rules ?
+* Where can I get some free rules ?
 * Link Dump
+* Q&A 
 
 # notes
 
 ## Yara is ...
 
 * "YARA, the "pattern matching swiss knife for malware researchers (and everyone else)" is developed by @plusvic and @VirusTotal."
+* rules made up of strings and conditions
 
-## tricks
+## Example rules for testing
+* always_true (from OSQuery Yara (manual)[https://osquery.readthedocs.io/en/latest/deployment/yara/]
+* eicar ( by AirBNB on (GitHub)[https://raw.githubusercontent.com/airbnb/binaryalert/master/rules/public/eicar.yara], found in (blog)[https://holdmybeersecurity.com/2020/03/01/operation-cleanup-eradicating-malware-with-osquery-and-kolide/] "OPERATION CLEANUP: ERADICATING MALWARE WITH OSQUERY AND KOLIDE" by Spartan2194 )
+  * WTH is EICAR?: http://www.eicar.org/86-0-Intended-use.html
+  * More fun with EICAR: https://biebermalware.wordpress.com/2017/05/10/playing-with-eicar-take-ii/  
+* PyInstaller ( me, (str_py2exe.yara)[https://raw.githubusercontent.com/DFIRnotes/rules/master/str_py2exe.yara] )
+  * Once upon a pentest...  
+* http (Volatility (yarascan)[https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal#yarascan] docs)
+
+### Test rules
+
+```
+//always_true.yara
+rule always_true
+{
+    meta:
+        purpose = "testing"
+        source = "https://osquery.readthedocs.io/en/latest/deployment/yara/"
+    condition:
+            true
+}
+```
+
+```
+// https://raw.githubusercontent.com/airbnb/binaryalert/master/rules/public/eicar.yara
+rule eicar_av_test {
+    /*
+       Per standard, match only if entire file is EICAR string plus optional trailing whitespace.
+       The raw EICAR string to be matched is:
+       X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+    */
+
+    meta:
+        description = "This is a standard AV test, intended to verify that BinaryAlert is working correctly."
+        author = "Austin Byers | Airbnb CSIRT"
+        reference = "http://www.eicar.org/86-0-Intended-use.html"
+
+    strings:
+        $eicar_regex = /^X5O!P%@AP\[4\\PZX54\(P\^\)7CC\)7\}\$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!\$H\+H\*\s*$/
+
+    condition:
+        all of them
+}
+```
+
+```
+// Practice Yara rule: check for string artifacts of py2exe builds
+// requires Yara 3.4+
+
+/*
+  github.com/dfirnotes/rules
+  Version 0.0.0
+*/
+
+rule has_pythonscript_label
+{
+  meta:
+    author = "@adricnet"
+  strings:
+    $pyscript_label = "PYTHONSCRIPT"
+
+  condition:
+    $pyscript_label
+}
+
+rule has_py2exe_err_string
+{
+  meta:
+    author = "@adricnet"
+  strings:
+    $py2exe_activation_error = "py2exe failed to activate the "
+
+  condition:
+    $py2exe_activation_error
+}
+
+rule possible_py2exe_created_file
+{
+  meta:
+    author = "@adricnet"
+  condition:
+    has_pythonscript_label and has_py2exe_err_string
+}
+```
+
+```http```
+
+## Some Yara Tricks
 
 ### Yara scanning files
 
