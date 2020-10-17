@@ -5,7 +5,7 @@ category: education,dfir
 author: adricnet
 ---
 
-_dc404 Oct 2020 presentation notes and link dump_
+_dc404: 17 Oct 2020 presentation notes and link dump_
 
 # pitch
 Yara is a really useful tool for matching patterns in files and data
@@ -31,6 +31,10 @@ operations, and has interesting applications for red, purple, and
   * can be pretty complex too when you need it
     * strings are just bytes, and there are wildcards and loops :)
     * Yes, you can use regular expressions too, if you are into that kind of thing *eyebrow*
+
+*Yara editor support*
+* For [VSCode](http://code.visualstudio.com/) in the plugin market or from @infosec-intern [vscode-yara](https://github.com/infosec-intern/vscode-yara)
+* For [Vim](https://linux.die.net/man/1/vimtutor) try [vim-syntax-vara](https://github.com/s3rvac/vim-syntax-yara) ( via @JohnTwC on [Twitter](https://twitter.com/JohnLaTwC/status/1317466051177635840) )
 
 ## Example rules
 * always_true (from OSQuery Yara [manual](https://osquery.readthedocs.io/en/latest/deployment/yara/)
