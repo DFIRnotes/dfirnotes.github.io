@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yara: Make Your Own Rules
+title: Yara Make Your Own Rules
 category: education,dfir
 author: adricnet
 ---
