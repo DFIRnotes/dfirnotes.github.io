@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mailbag: VM tools question
+title: Mailbag VM tools question
 category: education,malware
 author: adricnet
 ---
