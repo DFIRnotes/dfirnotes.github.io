@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Mentor Question: Personal Branding
+title: Mentor Question Personal Branding
 category: careers
 author: adricnet
 ---
-
 
 A few thoughts on personal branding, starting with mine/ours here:
 
