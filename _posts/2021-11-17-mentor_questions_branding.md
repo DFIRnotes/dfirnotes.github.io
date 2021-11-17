@@ -5,6 +5,7 @@ category: careers
 author: adricnet
 ---
 
+
 A few thoughts on personal branding, starting with mine/ours here:
 
 ## My Branding 
