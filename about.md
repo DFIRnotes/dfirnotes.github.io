@@ -21,7 +21,7 @@ We have:
 
 ### Contact us
 
-* @adricnet 
+* On <a rel="me" href="https://infosec.exchange/@dfirnotes">Mastodon</a>
 
 ### Credit and thanks
 
