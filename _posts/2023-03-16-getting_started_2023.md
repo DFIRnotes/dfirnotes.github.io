@@ -5,7 +5,6 @@ category: mentoring
 author: adricnet
 ---
 
-## Getting started in cybersecurity (2023)
 My recommendations to new folks, mentees, and several Lyft drivers in TL;DR or perhaps BLUF:
 
 1. Try some beginner courses and challenges to see some cybersecurity and to start building your skills
