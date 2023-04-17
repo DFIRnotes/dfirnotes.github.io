@@ -18,8 +18,12 @@ What would make up the perfect cybersecurity threat intelligence (CTI) report to
 * References & Citations
 
 ## References:
-* The Diamond Model of Intrusion Analysis
-* VERIS Getting Started , VERIS - MITRE Att&ck bridge, DoD 6510 for hard mode
-* MITRE ATT&CK Framework(s)
-* LM Intelligence driven CND paper, arguably everything you need to know about indicators
-  * Suricata, Sigma, Yara links
+* The Diamond Model of Intrusion Analysis: https://www.threatintel.academy/diamond/
+* VERIS Getting Started : http://veriscommunity.net/howto.html
+  * VERIS - MITRE Att&ck bridge: https://medium.com/mitre-engenuity/strengthening-the-connection-veris-and-mitre-att-ck-c3aac3fa9cd7
+  * DoD 6510 for hard mode: CJCSM 6510.01B https://www.jcs.mil/Portals/36/Documents/Library/Manuals/m651001.pdf?ver=zbA7MXUXDcB9-se9hOxsIA%3d%3d (PDF, check B-A-3 around p54)
+* MITRE ATT&CK Framework(s): https://attack.mitre.org/
+* LM Intelligence driven CND paper (2010) , arguably still everything you need to know about indicators
+  * https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+* Suricata, Sigma, Yara (Security Onion docs)
+  * https://docs.securityonion.net/en/2.3/search.html?q=rules&check_keywords=yes&area=default
