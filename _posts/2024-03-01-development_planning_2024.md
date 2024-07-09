@@ -5,22 +5,23 @@ category: education
 author: adricnet
 ---
 
-Some thoughts and links about some of the things I'm thinking about for professional development and education for the year
+Here are some thoughts and links about some of the things I'm thinking about for professional development and education for the year.
+**Updated** post in early July with some details and "how it's going".
 
 ## This looks like an awful lot of courses
-* Seminar series and book club from Threat Intel Dot Academy
+* Seminar series and book club from Threat Intel Dot Academy (a few lectures behind)
 * review a SANS core course to update and refresh skills
-  * which course is TBD
-  * probably Netwars run too
-* helping with ICS4ICS workforce development
-  * maybe complete my first credential there too
-* OffSec: PEN-200 this year, starting soon
-* DFIR.Training / Brett S. (is back)
-* Security Architecture course and certification ($work)
-* Investigation Theory (AND) group study ($work)
-* Antisyphon course (possibly)
+  * ICS515: ICS Visibility, Detection, and Response (August)
+  * probably DFIR Netwars run too
+* helped a tiny with ICS4ICS workforce development
+  * applied for my first credential there 2Q
+* OffSec: PEN-200 this year, started ...
+* DFIR.Training / Brett S. (is back): Placing Suspects Behind the Keyboard V2 (July)
+* SANS Security Architecture/ZT course and certification ($work) (ETA: July 2024)
+* Investigation Theory (AND) group study ($work) (through July)
+* Antisyphon range time / ACE-T™ Level 5 
 
-## leadership and comms
+## leadership and comms, too ?
 _$dayjob leader has some ideas about courses and seminars_
 * Do more writing/educating/presenting
 	* apply to present (CFP)s
