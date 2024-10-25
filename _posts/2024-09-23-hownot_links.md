@@ -8,6 +8,8 @@ author: adricnet
 How Not... talk:  the links
 _Herein are some books, articles, and people that we read, skimmed, or thought fondly of while preparing the "How Not to Have a Bad Time with Risky Data" talk seen at B-Sides Atlanta 2024_
 
+Slides PDF for browsing is [here](https://github.com/DFIRnotes/rules/blob/master/hownot_bsidesatl24.pdf), source in the Rules [repo](https://github.com/DFIRnotes/rules). This talk was not recorded, so no video is available at this time.
+
 * CSV/XLS foolishness
   * https://infosecwriteups.com/formula-injection-exploiting-csv-functionality-cd3d8efd02ec
   * https://www.veracode.com/blog/secure-development/data-extraction-command-execution-csv-injection 
