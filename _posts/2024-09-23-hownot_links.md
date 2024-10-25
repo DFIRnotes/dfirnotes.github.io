@@ -5,10 +5,14 @@ category: education
 author: adricnet
 ---
 
-How Not... talk:  the links
+How Not... talk:  slides and links
 _Herein are some books, articles, and people that we read, skimmed, or thought fondly of while preparing the "How Not to Have a Bad Time with Risky Data" talk seen at B-Sides Atlanta 2024_
 
+<img align="center" width="50%" src="https://github.com/DFIRnotes/rules/blob/c2a18bc4db89ead97dfae4d5074a09279195004b/hownot_title_slide.png">
+
 Slides PDF for browsing is [here](https://github.com/DFIRnotes/rules/blob/master/hownot_bsidesatl24.pdf), source in the Rules [repo](https://github.com/DFIRnotes/rules). This talk was not recorded, so no video is available at this time.
+
+<br/>
 
 * CSV/XLS foolishness
   * https://infosecwriteups.com/formula-injection-exploiting-csv-functionality-cd3d8efd02ec
